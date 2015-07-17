@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-MAINTAINER Nane Kratzke
+MAINTAINER Bhanu Kadali
 
 # Install latest updates
 RUN apt-get update
