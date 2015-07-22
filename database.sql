@@ -13,8 +13,8 @@ CREATE TABLE `CouponData` (
   `BussinessType` varchar(20) DEFAULT NULL,
   `Address` varchar(256) DEFAULT NULL,
   `zipcode` varchar(16) DEFAULT NULL,
-  `longitude` varchar(16) DEFAULT NULL,
-  `lat` varchar(16) DEFAULT NULL,
+  `longitude` varchar(256) DEFAULT NULL,
+  `lat` varchar(256) DEFAULT NULL,
   `couponimage` blob DEFAULT NULL, 
   PRIMARY KEY (`CouponID`)
 );
