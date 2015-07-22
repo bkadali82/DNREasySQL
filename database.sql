@@ -32,6 +32,13 @@ CREATE TABLE `Customer` (
   PRIMARY KEY (`CustomerEmail`)
 );
 
+alter table Customer add column rewardsamount Decimal(5,2) ;
+
+alter table CouponData add column maxfacevalue Int(1);
+alter table CouponData add column discount Int(1) ;
+alter table CouponData Modify column couponimage mediumblob;
+alter table Customer add column directrefamount Decimal(5,2);
+alter table Customer add column subrefamount Decimal(5,2);
 
 LOCK TABLES `CouponData` WRITE;
 INSERT INTO `CouponData` VALUES
